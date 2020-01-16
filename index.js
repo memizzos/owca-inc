@@ -4,4 +4,5 @@ const data = require('./dane');
 app.get('/', function (req, res) {
   res.send('hello world')
 })
-data.save();
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
