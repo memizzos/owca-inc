@@ -16,7 +16,7 @@ const path = require('path')
 
 
 
-let owce = new Set();
+let owce = [];
 let miejsca = {
 	chatka:{},
 	pastwisko:{},
@@ -31,12 +31,12 @@ let miejsca = {
 const dataPath = path.join(__dirname,'data.json');
 function load() {
 	const file = fs.readJsonSync(dataPath)
-	owce = new Set(file.owce);
+	owce = file.owce;
 	miejsca = file.miejsca;
 }
 function save() {
 	const file = {
-		owce: Array.from(owce.values),
+		owce: owce.values,
 		miejsca: miejsca,
 	};
 	console.log(file);
