@@ -1,0 +1,14 @@
+{
+	"owce": [],
+	"miejsca": {
+		"chatka": {},
+		"pastwisko": {},
+		"szpital": {},
+		"fryzjer": {},
+		"produkcja": {},
+		"parking": {
+			"rampa1": {},
+			"rampa2": {}
+		}
+	}
+}
