@@ -36,7 +36,7 @@ function load() {
 }
 function save() {
 	const file = {
-		owce: owce.values,
+		owce: owce,
 		miejsca: miejsca,
 	};
 	console.log(file);
